@@ -9,6 +9,7 @@ toc_footers:
 
 includes:
   - url_params
+  - session
 
 search: true
 ---

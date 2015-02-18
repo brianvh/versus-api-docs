@@ -6,4 +6,4 @@ use ::Rack::TryStatic,
   :urls => %w[/],       # match all requests
   :try => ['.html', 'index.html', '/index.html'] # try these postfixes sequentially
 # 404
-run proc { [404, {'Content-Type' => 'text/plain'}, [' File not found.']]}
+run -> (env) { [404, {'Content-Type' => 'text/plain'}, [' File not found.']]}

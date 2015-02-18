@@ -7,7 +7,7 @@ curl -X GET http://versus.dev/api/v2/games/:game_uuid
   /session?developer_uuid=<developer_uuid>
 ```
 
-> Returns a 401 with this JSON:
+> Returns a 401 with JSON following this structure:
 
 ```json
 { "session": { "seed": "a random genreated hash" } }
@@ -58,7 +58,7 @@ curl -X GET http://versus.dev/api/v2/games/:game_uuid
   /session?developer_uuid=<developer_uuid>&token=<token>
 ```
 
-> Returns a 200 with this JSON:
+> Returns a 200 with JSON following this structure:
 
 ```json
 {
@@ -97,7 +97,7 @@ curl -X PUT .../api/v2/games/:game_uuid/session \
   }'
 ```
 
-> Returns a 200 with this JSON:
+> Returns a 200 with JSON following this structure:
 
 ```json
 {
